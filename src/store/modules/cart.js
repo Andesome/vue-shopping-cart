@@ -38,9 +38,9 @@ const actions = {
     commit('setCartItems', { items: [] })
     shop.buyProducts(
       products,
-      () => commit('setCheckoutStatus', 'successful'),
+      () => commit('setCheckoutStatus', '成功'),
       () => {
-        commit('setCheckoutStatus', 'failed')
+        commit('setCheckoutStatus', '失败')
         // rollback to the cart saved before sending the request
         commit('setCartItems', { items: savedCartItems })
       }
