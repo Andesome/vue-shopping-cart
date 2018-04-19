@@ -2,15 +2,20 @@
   <div>
     <h1>shopping cart</h1>
     <ProductList />
+    <hr>
+    <ShoppingCart/>
   </div>
 </template>
 
 <script>
 import ProductList from "../components/ProductList.vue"
+import ShoppingCart from "../components/ShoppingCart.vue"
+
 export default {
-  name:'ShoppingCart',
+  name:'Shopping',
   components:{
-    ProductList
+    ProductList,
+    ShoppingCart
   }
 }
 </script>

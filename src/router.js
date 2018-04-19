@@ -1,9 +1,9 @@
 import VueRouter from "vue-router";
-import ShoppingCart from "./pages/ShoppingCart.vue"
+import Shopping from "./pages/Shopping.vue"
 
 const routes = [{
   path: '/shop',
-  component: ShoppingCart,
+  component: Shopping,
 }]
 
 const router = new VueRouter({
